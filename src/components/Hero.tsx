@@ -1,30 +1,24 @@
-
 import { Button } from "@/components/ui/button";
 import { Play, Code, Users, Sparkles, Zap, Globe } from "lucide-react";
 
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950">
-      {/* Enhanced 3D animated background elements */}
+      {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Floating geometric shapes */}
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-3xl transform rotate-45 animate-pulse hover:rotate-90 transition-transform duration-1000"></div>
         <div className="absolute bottom-1/4 right-1/4 w-24 h-24 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full animate-bounce hover:scale-110 transition-transform duration-500"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gradient-to-r from-emerald-500/5 to-teal-500/5 rounded-full blur-xl animate-pulse"></div>
-        
-        {/* 3D Grid overlay */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.05),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgba(120,119,198,0.03)_50%,transparent_100%)]"></div>
-        
-        {/* Floating particles with 3D effect */}
         <div className="absolute top-20 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-bounce shadow-[0_0_20px_rgba(59,130,246,0.5)]" style={{ animationDelay: '0.3s' }}></div>
         <div className="absolute bottom-32 right-1/4 w-3 h-3 bg-purple-400 rounded-full animate-bounce shadow-[0_0_20px_rgba(168,85,247,0.5)]" style={{ animationDelay: '0.7s' }}></div>
         <div className="absolute top-1/3 right-20 w-1 h-1 bg-cyan-400 rounded-full animate-ping shadow-[0_0_10px_rgba(34,211,238,0.8)]"></div>
         <div className="absolute bottom-1/3 left-20 w-2 h-2 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_15px_rgba(52,211,153,0.6)]"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto text-center">
-        {/* Enhanced Logo/Brand with 3D effect */}
+      <div className="relative z-10 max-w-7xl mx-auto text-center pt-12 sm:pt-20">
+        {/* Logo and brand */}
         <div className="flex items-center justify-center mb-8 animate-fade-in">
           <div className="flex items-center space-x-3 group cursor-pointer">
             <div className="relative transform transition-all duration-500 hover:scale-110 hover:rotate-6">
@@ -42,7 +36,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Enhanced Main Headline with better responsive typography */}
+        {/* Headline */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in delay-200">
           Code Together,
           <span className="block mt-2 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent animate-pulse transform transition-all duration-500 hover:scale-105">
@@ -50,13 +44,13 @@ export const Hero = () => {
           </span>
         </h2>
 
-        {/* Enhanced subtitle with better responsive text */}
+        {/* Subtitle */}
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in delay-300 px-4">
           Real-time collaborative coding platform for teams, interviews, and hackathons. 
           Write, execute, and debug code together in perfect sync.
         </p>
 
-        {/* Enhanced feature highlights with 3D cards */}
+        {/* Features */}
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 lg:gap-6 mb-12 animate-fade-in delay-500">
           <div className="flex items-center space-x-2 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 backdrop-blur-sm rounded-full px-3 sm:px-4 py-2 sm:py-3 border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] transform hover:-translate-y-1">
             <Users className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400" />
@@ -72,7 +66,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Enhanced CTA Buttons with 3D effects */}
+        {/* Call to Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-16 animate-fade-in delay-700">
           <Button 
             size="lg" 
@@ -90,28 +84,6 @@ export const Hero = () => {
           >
             See Live Demo
           </Button>
-        </div>
-
-        {/* Enhanced stats with 3D cards and better responsive grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto animate-fade-in delay-1000">
-          <div className="text-center group">
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-slate-700/50 hover:border-cyan-400/50 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.2)] transform hover:-translate-y-2 cursor-pointer">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-2 transition-all duration-300 group-hover:scale-110">10K+</div>
-              <div className="text-slate-400 text-sm sm:text-base">Active Developers</div>
-            </div>
-          </div>
-          <div className="text-center group">
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-slate-700/50 hover:border-emerald-400/50 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(52,211,153,0.2)] transform hover:-translate-y-2 cursor-pointer">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-emerald-400 to-green-400 bg-clip-text text-transparent mb-2 transition-all duration-300 group-hover:scale-110">50K+</div>
-              <div className="text-slate-400 text-sm sm:text-base">Collaborative Sessions</div>
-            </div>
-          </div>
-          <div className="text-center group sm:col-span-1">
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-slate-700/50 hover:border-purple-400/50 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.2)] transform hover:-translate-y-2 cursor-pointer">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2 transition-all duration-300 group-hover:scale-110">99.9%</div>
-              <div className="text-slate-400 text-sm sm:text-base">Uptime</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
